@@ -13,8 +13,7 @@ return (
   </div>
 
 
-)
-}
+)}
 
 
 export default CategoryItem
