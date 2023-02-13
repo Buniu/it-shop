@@ -3,7 +3,7 @@ import { CartDropdownHandler } from "../../contexts/cart-dropdown-handler.contex
 
 import "./product-card.styles.scss"
 
-import Button from "../button/button.component"
+import Button,{BUTTON_TYPE_CLASSES} from "../button/button.component"
 
 const ProductCard = ({product}) => {
     const {addItemToCart} = useContext(CartDropdownHandler)
@@ -15,7 +15,7 @@ const ProductCard = ({product}) => {
             <span className="name">{name}</span>
             <span className="price">{price}</span>
         </div>
-        <Button buttonType='inverted' onClick={()=> addItemToCart(product)}> Add to card</Button>
+        <Button buttonType={BUTTON_TYPE_CLASSES.base} onClick={()=> addItemToCart(product)}> Add to card</Button>
     </div>
 )}
 
