@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect } from "react";
+import { useState, createContext, useEffect, useReducer } from "react";
 
 const addCartItem = (cartItems,productToAdd) => {
     // if (cartItems.filter(e => e.name === productToAdd.name).length > 0)  {
