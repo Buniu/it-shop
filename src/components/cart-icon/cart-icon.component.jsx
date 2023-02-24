@@ -6,7 +6,8 @@ import { CartDropdownHandler } from "../../contexts/cart-dropdown-handler.contex
 const CartIcon = () => {
     const {activeCartDropdown,setActiveCartDropdown, cartCount} = useContext(CartDropdownHandler)
     return (
-        <CartIconContainer className="cart-icon-container" onClick={()=>{setActiveCartDropdown(!activeCartDropdown)}}>
+        <CartIconContainer className="cart-icon-container" onClick={()=>{setActiveCartDropdown()}}>
+        {/* <CartIconContainer className="cart-icon-container" onClick={()=>{setActiveCartDropdown(!activeCartDropdown)}}> */}
             <ShoppingIcon className="shopping-icon"/>
             <ItemCount className="item-count">{cartCount}</ItemCount>
         </CartIconContainer>
