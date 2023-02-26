@@ -1,5 +1,4 @@
 import {  Fragment,} from "react"
-import { } from "../../contexts/categories.context"
 import CategoryPreview from "../../components/category-preview/category-preview.component"
 
 import { selectCategoriesMap } from "../../store/categories/category.selector"

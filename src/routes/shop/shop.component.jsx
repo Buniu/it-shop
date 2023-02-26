@@ -8,6 +8,10 @@ import { useDispatch, useSelector } from "react-redux"
 import { setCategories } from "../../store/categories/category.action"
 
 
+
+
+
+
  const Shop = () => {
 
     const dispatch = useDispatch()
